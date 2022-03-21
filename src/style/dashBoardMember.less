@@ -1,0 +1,138 @@
+.avaContainer {
+  position: relative;
+  overflow: hidden;
+  //   max-width: fit-content;
+  //   max-height: fit-content;
+}
+
+.avatarMember {
+  border: 2px solid @primary-color;
+  position: relative;
+  //opacity: 0.5;
+}
+.mask {
+  position: absolute;
+  background-color: @success-color;
+  top: 0em;
+  left: 0;
+  opacity: 0;
+   transition: 1s;
+}
+
+//desktop
+@media all and (max-width: 1200px) {
+  .mask {
+  position: absolute;
+  background-color: @success-color;
+  top: 0em;
+  left: 0;
+  opacity: 0;
+   transition: 1s;
+}
+}
+@media all and (max-width: 992px) {
+  .mask {
+  position: absolute;
+  background-color: @success-color;
+  top: 0em;
+  left: 0;
+  opacity: 0;
+  transition: 1s;
+}
+}
+@media all and (max-width: 480px) {
+  .mask {
+  position: absolute;
+  background-color: @success-color;
+  top: 0em;
+  left: 0;
+  opacity: 0;
+  transition: 1s;
+}
+}
+
+.avaContainer:hover .avatarMember {
+  opacity: 0.5;
+   transition: 1s;
+}
+.avaContainer:hover .mask {
+  opacity: 1;
+   transition: 1s;
+}
+
+.changePicMember {
+  margin: 0.3em 0 0.3em 0;
+}
+.memberpicBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.site-card-wrapper {
+  margin: 0 0 5em 0;
+}
+.rowCard {
+  margin-bottom: 3em;
+}
+.dsCardTitle {
+  color: @primary-color;
+}
+.campOrder3:hover {
+  background-color: @body-background;
+   transition: 0.2s;
+}
+.circleDate {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: linear-gradient(
+    325deg,
+    rgba(193, 95, 46, 1) 0%,
+    rgba(193, 95, 46, 1) 60%,
+    rgba(241, 228, 225, 0.8519782913165266) 61%,
+    rgba(193, 95, 46, 1) 62%,
+    rgba(193, 95, 46, 1) 100%
+  );
+  // text-align: center;
+  color: @body-background;
+}
+.month3 {
+  color: @body-background;
+
+  font-size: 0.5em;
+  margin-top: 10%;
+  margin-left: 9%;
+}
+.date3 {
+  color: @body-background;
+
+  font-size: 1rem;
+  margin-top: -25%;
+  margin-left: 20%;
+}
+.campOrder3title {
+  font-size: 1.5em;
+}
+.picModal{
+  top:10em;
+}
+.blink_me {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+.popover_title{
+  font-size: 1.3em;
+  color:@component-background;
+}
+.popover_content{
+  font: 1.1em sans-serif;
+  color:@component-background;
+}
+.ant-popover-inner{
+background: @success-color;
+border-radius:3%;
+
+}

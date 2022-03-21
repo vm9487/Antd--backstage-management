@@ -1,0 +1,456 @@
+
+
+.infobox {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+}
+.rowInPODetail{
+  margin-bottom: 10em;
+}
+
+@taglineheight: 3em;
+@tagwidth: 5em;
+.statusTagTBD {
+  border-radius: 0.5em;
+  background-color: @primary-color;
+  width: @tagwidth;
+  height: @taglineheight;
+  color: #fff5e2;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: @taglineheight;
+  position: relative;
+  margin: 0em auto -1.2em auto;
+}
+.statusTagDone {
+  border-radius: 0.5em;
+  background-color: @success-color;
+  width: @tagwidth;
+  height: @taglineheight;
+  color: #fff5e2;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: @taglineheight;
+  position: relative;
+  margin: 0em auto -1.2em auto;
+}
+.statusTagPODone {
+  border-radius: 0.5em;
+  background-color: @info-color;
+  width: @tagwidth;
+  height: @taglineheight;
+  color: #fff5e2;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: @taglineheight;
+  position: relative;
+  margin: 0em auto -1.2em auto;
+}
+.statusTagCancel {
+  border-radius: 0.5em;
+  background-color: @rate-star-bg;
+  width: @tagwidth;
+  height: @taglineheight;
+  color: #fff5e2;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: @taglineheight;
+  position: relative;
+  margin: 0em auto -1.2em auto;
+}
+
+
+.subtitle2 {
+  position: relative;
+  color: @success-color;
+  font-size: 1.2rem;
+  margin: 0 auto -0.2em auto;
+}
+.subtitle3 {
+  position: relative;
+  color: @component-background;
+  background-color: @success-color;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin: -0.2em 2em 1em 1.3em;
+}
+.subnote {
+  color: @rate-star-bg;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+.subname {
+  color: @info-color;
+  font-size: 1.2em;
+  padding: 0.5em 2em;
+}
+.subnote2 {
+  color: @rate-star-bg;
+  font-size: 0.8em;
+  padding: 0.5em;
+  margin: 0 2em;
+}
+.subnote3 {
+  color: @rate-star-bg;
+  font-size: 0.8em;
+  padding: 0.5em 4em;
+}
+.subname2 {
+  color: @info-color;
+  font-size: 1.2em;
+  display: inline-block;
+  margin: 0 2em;
+}
+.subname3 {
+  color: @success-color;
+  font-size: 1.2em;
+  margin: 0 3em;
+}
+.subname4 {
+  color: @info-color;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+}
+.orderlinks {
+  position: relative;
+  // left: 2em;
+  display: block;
+  margin: 1em 1em 1em 0em;
+  cursor: pointer;
+  padding:0.5em 0.8em;
+}
+.btnclaster {
+  width: 10em;
+  position: relative;
+  float: right;
+}
+.personWhoOrder {
+  justify-content: center;
+  align-items: center;
+}
+.totalBlock {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 4em;
+}
+.totalBlockEnd {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 3.3em;
+  border-bottom: #c4c4c4 1px solid;
+}
+.totalItem {
+  font-size: 1.2em;
+}
+.total {
+  font-size: 1.2em;
+}
+.totalE {
+  font-size: 1.5em;
+  color: @primary-color;
+}
+.totalItemE {
+  font-size: 1.5em;
+  color: @primary-color;
+}
+.orderppl{
+  margin-left: 1.2em;
+}
+
+@media (max-width: 996px) {
+  @width: 200px;
+  @tagWidth: 85px;
+  @tagWordTop: 25px;
+  @tagWordLeft: 20px;
+  @tagWordSize: 11px;
+  // --------pic small for product and camp--------------------------------------------
+  .O6orderPicBox {
+    position: relative;
+    width: @width;
+    height: @width;
+    margin: 0 auto;
+  }
+  .O6_list_item {
+    width: @width;
+    height: @width;
+    overflow: hidden;
+    position: relative;
+    clip-path: polygon(
+      25% 0%,
+      100% 0,
+      100% 25%,
+      100% 75%,
+      75% 100%,
+      25% 100%,
+      0 100%,
+      0% 25%
+    );
+  }
+  .O6_pic {
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .O6_tag {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: @tagWidth @tagWidth 0 0;
+    border-color: #c15f2ebe transparent transparent transparent;
+    position: absolute;
+    z-index: 99;
+    clip-path: polygon(150% 0%, 59% 0, 0 59%, 0 100%);
+  }
+
+  .O6_tagStar {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: @tagWidth @tagWidth 0 0;
+    border-color: rgba(251, 188, 5, 0.8) transparent transparent transparent;
+    position: absolute;
+    z-index: 99;
+    clip-path: polygon(150% 0%, 59% 0, 0 59%, 0 100%);
+  }
+  .O6_tagNoStock {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: @tagWidth @tagWidth 0 0;
+    border-color: #c4c4c4 transparent transparent transparent;
+    position: absolute;
+    z-index: 99;
+    clip-path: polygon(150% 0%, 59% 0, 0 59%, 0 100%);
+  }
+  .O6_tagWord {
+    position: absolute;
+    top: @tagWordTop;
+    left: @tagWordLeft;
+    transform: rotate(-45deg);
+    color: #e9e3da;
+    font-size: @tagWordSize;
+    z-index: 100;
+  }
+
+  .subtitle {
+  
+  display:flex;
+  color: @success-color;
+  width: 80%;
+  font-size: 1.2rem;
+  margin: 0.2em auto;
+  justify-content: center;
+  align-items: center; 
+}
+.subWord{
+display:block;
+}
+}
+@media (min-width: 992px) {
+  @width: 170px;
+  @tagWidth: 72.25px;
+  @tagWordTop: 21.25px;
+  @tagWordLeft: 17px;
+  @tagWordSize: 10px;
+  // --------pic small for product and camp--------------------------------------------
+  .O6orderPicBox {
+    position: relative;
+    width: @width;
+    height: @width;
+    margin: 0 auto;
+  }
+  .O6_list_item {
+    width: @width;
+    height: @width;
+    overflow: hidden;
+    position: relative;
+    clip-path: polygon(
+      25% 0%,
+      100% 0,
+      100% 25%,
+      100% 75%,
+      75% 100%,
+      25% 100%,
+      0 100%,
+      0% 25%
+    );
+  }
+  .O6_pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .O6_tag {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: @tagWidth @tagWidth 0 0;
+    border-color: #c15f2ebe transparent transparent transparent;
+    position: absolute;
+    z-index: 99;
+    clip-path: polygon(150% 0%, 59% 0, 0 59%, 0 100%);
+  }
+
+  .O6_tagStar {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: @tagWidth @tagWidth 0 0;
+    border-color: rgba(251, 188, 5, 0.8) transparent transparent transparent;
+    position: absolute;
+    z-index: 99;
+    clip-path: polygon(150% 0%, 59% 0, 0 59%, 0 100%);
+  }
+  .O6_tagNoStock {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: @tagWidth @tagWidth 0 0;
+    border-color: #c4c4c4 transparent transparent transparent;
+    position: absolute;
+    z-index: 99;
+    clip-path: polygon(150% 0%, 59% 0, 0 59%, 0 100%);
+  }
+  .O6_tagWord {
+    position: absolute;
+    top: @tagWordTop;
+    left: @tagWordLeft;
+    transform: rotate(-45deg);
+    color: #e9e3da;
+    font-size: @tagWordSize;
+    z-index: 100;
+  }
+    .subtitle {
+  
+  display:flex;
+  color: @success-color;
+  width: 80%;
+  font-size: 1.2rem;
+  margin: 0.2em auto;
+  justify-content: center;
+  align-items: center; 
+}
+.subWord{
+display:block;
+}
+}
+@media (min-width: 1200px) {
+  @width: 200px;
+  @tagWidth: 85px;
+  @tagWordTop: 25px;
+  @tagWordLeft: 20px;
+  @tagWordSize: 11px;
+  // --------pic small for product and camp--------------------------------------------
+  .O6orderPicBox {
+    position: relative;
+    width: @width;
+    height: @width;
+    margin: 0 auto;
+  }
+  .O6_list_item {
+    width: @width;
+    height: @width;
+    overflow: hidden;
+    position: relative;
+    clip-path: polygon(
+      25% 0%,
+      100% 0,
+      100% 25%,
+      100% 75%,
+      75% 100%,
+      25% 100%,
+      0 100%,
+      0% 25%
+    );
+  }
+  .O6_pic {
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .O6_tag {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: @tagWidth @tagWidth 0 0;
+    border-color: #c15f2ebe transparent transparent transparent;
+    position: absolute;
+    z-index: 99;
+    clip-path: polygon(150% 0%, 59% 0, 0 59%, 0 100%);
+  }
+
+  .O6_tagStar {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: @tagWidth @tagWidth 0 0;
+    border-color: rgba(251, 188, 5, 0.8) transparent transparent transparent;
+    position: absolute;
+    z-index: 99;
+    clip-path: polygon(150% 0%, 59% 0, 0 59%, 0 100%);
+  }
+  .O6_tagNoStock {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: @tagWidth @tagWidth 0 0;
+    border-color: #c4c4c4 transparent transparent transparent;
+    position: absolute;
+    z-index: 99;
+    clip-path: polygon(150% 0%, 59% 0, 0 59%, 0 100%);
+  }
+  .O6_tagWord {
+    position: absolute;
+    top: @tagWordTop;
+    left: @tagWordLeft;
+    transform: rotate(-45deg);
+    color: #e9e3da;
+    font-size: @tagWordSize;
+    z-index: 100;
+  }
+  .subtitle {
+  
+  display:flex;
+  color: @success-color;
+  width: 80%;
+  font-size: 1.2rem;
+  margin: 0.2em auto;
+  justify-content: center;
+  align-items: center; 
+}
+.subWord{
+display:block;
+}
+}
+.extraPic{
+  width: 250px;
+  height: 150px;
+}
+.extraPic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flex-wrapper{
+  display:flex;
+  align-items: center;
+}
+.existed_rate{
+  margin-left:1em;
+}
+.existed_rate_time{
+  color:#c4c4c4;
+  font-size: 0.5em;
+}
+.displayNone{
+  display:none;
+}
+.test{
+  background-color: aqua;
+}
